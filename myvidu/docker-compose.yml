@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  openvidu:
+    image: openvidu/openvidu-dev:2.29.0
+    ports:
+      - '4443:4443'
+    environment:
+      - SERVER_PORT=${SERVER_PORT}
+      - OPENVIDU_URL=${OPENVIDU_URL}
+      - OPENVIDU_SECRET=${OPENVIDU_SECRET}
